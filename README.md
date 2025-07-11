@@ -63,6 +63,12 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+bash
+git add postman_collection.json
+git commit -m "Added Postman collection"
+git push origin main
+
+
 ### 4. Add OpenAI API Key
 
 * Paste your key in the sidebar input to begin using the assistant.
