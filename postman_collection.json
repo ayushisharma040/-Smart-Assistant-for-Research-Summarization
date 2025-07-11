@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "Smart Assistant API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ask Anything",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"query\": \"What is the objective of the research?\" }"
+        },
+        "url": { "raw": "http://localhost:8000/ask", "host": ["localhost:8000"], "path": ["ask"] }
+      }
+    },
+    {
+      "name": "Challenge Me",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{}"
+        },
+        "url": { "raw": "http://localhost:8000/challenge", "host": ["localhost:8000"], "path": ["challenge"] }
+      }
+    },
+    {
+      "name": "Get Summary",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"document\": \"base64 string of the document\" }"
+        },
+        "url": { "raw": "http://localhost:8000/summarize", "host": ["localhost:8000"], "path": ["summarize"] }
+      }
+    }
+  ]
+}
